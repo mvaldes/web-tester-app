@@ -1,0 +1,27 @@
+{
+  "name": "web-tester-app",
+  "version": "1.0.0",
+  "description": "Full frontend and backend web testing tool",
+  "main": "index.js",
+  "scripts": {
+    "test:frontend": "node tests/frontend/lighthouse.js && node tests/frontend/accessibility.js",
+    "test:backend": "jest tests/backend/api.test.js",
+    "test": "node services/run-tests.js",
+    "serve": "node server.js",
+    "start": "node run-all.js"
+  },
+  "dependencies": {
+    "@axe-core/puppeteer": "^4.7.2",
+    "chrome-launcher": "^0.15.1",
+    "express": "^4.18.2",
+    "lighthouse": "^11.7.0",
+    "nodemailer": "^6.9.0",
+    "puppeteer": "^21.3.8",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "author": "Mauro Valdes",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "frontendURLs": [
+    "https://example.com",
+    "https://example.com/contact",
+    "https://example.com/about"
+  ],
+  "backendAPIs": [
+    {
+      "method": "GET",
+      "url": "https://jsonplaceholder.typicode.com/posts"
+    },
+    {
+      "method": "GET",
+      "url": "https://jsonplaceholder.typicode.com/users"
+    }
+  ]
+}
